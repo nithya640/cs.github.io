@@ -7,8 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="hotel.css">
         <link href="bootstrap.min.css" rel="stylesheet">
-
-
     </head>
     <body>
       
@@ -16,16 +14,14 @@
         <div class="container d-flex justify-content-between align-items-center">
     
           <div class="logo">
-            <h1 class="text-light"><a href="hotel.html">Hotel Del Luna</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <h1 class="text-light"><a href="index.html">Hotel Del Luna</a></h1>
           </div>
     
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link" href="hotel.html" >Home</a></li>
+              <li><a class="nav-link" href="index.html" >Home</a></li>
               <li><a href="about.html" class="nav-link">About</a></li>
-              <li class="dropdown"><a href="rooms.html" class="nav-link"><span>Facilites</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="rooms.html" class="nav-link"><span>Facilites</span></a>
                 <ul>
                   <li><a href="rooms.html#garden" class="nav-link">Garden</a></li>
                   <li><a href="rooms.html#library" class="nav-link">Library</a></li>
@@ -39,102 +35,98 @@
     
         </div>
       </header>
-
+      <main class="events"><br><br><br>
       <section id="book-a-table" class="book-a-table">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
+        <div class="container" >
             <h2>Reservation</h2>
-            <p>Book a Table</p>
-          </div>
-  
-          <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <br>
+          <form class="">
+            <div class="form-group">
+              <h4>Booking & contact</h4>
             <div class="row">
-              <div class="col-lg-4 col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+              <div class="col-lg-3 col-md-6 mt-3 mt-md-0">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                <div class="validate"></div>
+              <div class="col-lg-3 col-md-9  mt-3 mt-md-0">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your e-mail">
+              </div>       
+              <div class="col-lg-3 col-md-6  mt-3 mt-md-0">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone No." name="phone">
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+              <div class="col-lg-3 col-md-6  mt-3 mt-md-0">
+                <label for="street">Address</label>
+                <input type="text" id="address" placeholder="Address">
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+              <div class="col-lg-3 col-md-6  mt-0 mt-md-3">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+              <div class="col-lg-4 col-md-6  mt-0 mt-md-3">
+                <label for="post-code">Postal Code</label>
+                <input type="text" id="post-code" placeholder="Postal Code">
               </div>
-              <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                <div class="validate"></div>
+              <div class="col-lg-3 col-md-6  mt-0 mt-md-3">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Country">
               </div>
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-              <div class="validate"></div>
             </div>
-            <div class="text-center"><button type="submit">Book a Table</button></div>
-          </form>
-  
-        </div>
-      </section>
+            <br>
+            <div class="form-group">
+              <h4 class="heading">Details</h4>
+              <div class="row">
+              <div class="col-lg-3 col-md-6  mt-0 mt-md-3">
+                <label for="arrive">Arrive&nbsp;&nbsp;</label>
+                <input type="date" id="arrive" name="arrive">
+              </div>      
+              <div class="col-lg-3 col-md-6  mt-0 mt-md-3">
+                <label for="depart">Depart&nbsp;&nbsp;</label>
+                <input type="date" id="depart" name="depart">
+              </div>
+              <div class="col-lg-3 col-md-6  mt-0 mt-md-3">
+                  <select>
+                    <option value="blank"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <label for="fruit">&nbsp;&nbsp;People</label>
+              </div> 
+              </div>
+              <span style="color: #d9ba85;">Do you have Membership</span><br>
+              <input type="checkbox" id="depart" name="yes">
+              <label for="depart" class="label-date">Yes</label>
+              <p class="">Please describe any extra services required :</p>
+              <textarea name="comments" id="comments"></textarea><br><br>
+              <button type="submit" value="Submit" class="col-1-4">Submit</button>
+              </div></form></div></section><br><br>  
+</main>
 
-<!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Restaurantly</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-            </div>
-          </div>
-
+              <h3>Hotel Del Luna</h3>
+              <p>A108 ABC Street <br>DEL 3105824<br><br>
+                <strong>Phone:</strong> 1234567890<br>
+                <strong>Email:</strong> info@example.com<br></p>
+            </div></div>
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <!-- Template Main JS File -->
-  <script src="main.js"></script>
-
-    </body>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="rooms.html">Facilites</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="book.html">Booking</a></li>
+            </ul></div></div></div></div>
+    </footer>
+  </body>
 </html>
